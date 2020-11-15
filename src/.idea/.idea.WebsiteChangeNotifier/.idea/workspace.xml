@@ -23,16 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28850ec8-773e-4ade-8b10-bbd45a0aff9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/DependencyInjector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Data/EmailConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebsiteChangeNotifier/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebsiteChangeNotifier/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebsiteChangeNotifier/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebsiteChangeNotifier/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/NotificationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/WebsiteChangeNotifier.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/WebsiteChangeNotifier.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Interfaces/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Data/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/DependencyInjector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/DependencyInjector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteChangeNotifier.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteChangeNotifier.Services.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/WebsiteContentCheckerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/WebsiteChangeNotifier.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/WebsiteChangeNotifier.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteContentChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteContentChecker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +46,29 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/FFFAFDBB-3A56-49DC-9EBA-B1FBD3803000/7/Uri.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4B47B422-BC4C-4615-BBDE-BE1DF9B21B0D/2/ServiceCollectionServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0CB5F2A2-2C95-4142-A4F7-DF0C090D57AF/17C/future.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Interfaces/Class1.cs" />
-        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Data/Class1.cs" />
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/Class1.cs" />
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Interfaces/IWebsiteContentChecker.cs" />
-        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteContentChecker.cs" />
-        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/DependencyInjector.cs" />
-        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteChangeNotifier.Services.csproj" />
         <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Tests/WebsiteContentCheckerTests.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/ValuesController.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Data/Class1.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Data/EmailConfig.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Interfaces/IEmailSender.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/EmailSender.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Data/NotificationConfig.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/NotificationController.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteContentChecker.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Services/DependencyInjector.cs" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Startup.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605463916291</updated>
-      <workItem from="1605463927357" duration="2635000" />
+      <workItem from="1605463927357" duration="4924000" />
     </task>
     <servers />
   </component>
@@ -144,86 +153,94 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1870" height="354" key="GridCell.Tab.0.bottom" timestamp="1605466304668">
+    <state x="721" y="221" key="#xdebugger.evaluate" timestamp="1605468697741">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304668" />
-    <state width="1870" height="354" key="GridCell.Tab.0.center" timestamp="1605466304668">
+    <state x="721" y="221" key="#xdebugger.evaluate/0.0.1920.1025@0.0.1920.1025" timestamp="1605468697741" />
+    <state width="537" height="566" key="DebuggerActiveHint" timestamp="1605468624824">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.0.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304668" />
-    <state width="1870" height="354" key="GridCell.Tab.0.left" timestamp="1605466304668">
+    <state width="537" height="566" key="DebuggerActiveHint/0.0.1920.1025@0.0.1920.1025" timestamp="1605468624824" />
+    <state width="1870" height="354" key="GridCell.Tab.0.bottom" timestamp="1605468678361">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.0.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304668" />
-    <state width="1870" height="354" key="GridCell.Tab.0.right" timestamp="1605466304668">
+    <state width="1870" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605468678361" />
+    <state width="1870" height="354" key="GridCell.Tab.0.center" timestamp="1605468678361">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.0.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304668" />
-    <state width="1870" height="354" key="GridCell.Tab.1.bottom" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.0.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605468678361" />
+    <state width="1870" height="354" key="GridCell.Tab.0.left" timestamp="1605468678361">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.1.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.1.center" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.0.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605468678361" />
+    <state width="1870" height="354" key="GridCell.Tab.0.right" timestamp="1605468678361">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.1.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.1.left" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.0.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605468678361" />
+    <state width="1870" height="354" key="GridCell.Tab.1.bottom" timestamp="1605468675562">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.1.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.1.right" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.1.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675562" />
+    <state width="1870" height="354" key="GridCell.Tab.1.center" timestamp="1605468675562">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.1.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.2.bottom" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.1.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675562" />
+    <state width="1870" height="354" key="GridCell.Tab.1.left" timestamp="1605468675562">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.2.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
-    <state width="1870" height="354" key="GridCell.Tab.2.center" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.1.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675562" />
+    <state width="1870" height="354" key="GridCell.Tab.1.right" timestamp="1605468675562">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.2.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.2.left" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.1.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675562" />
+    <state width="1870" height="354" key="GridCell.Tab.2.bottom" timestamp="1605468675671">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.2.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.2.right" timestamp="1605466304669">
+    <state width="1870" height="354" key="GridCell.Tab.2.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675671" />
+    <state width="1870" height="354" key="GridCell.Tab.2.center" timestamp="1605468675670">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.2.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304669" />
-    <state width="1870" height="354" key="GridCell.Tab.3.bottom" timestamp="1605466304671">
+    <state width="1870" height="354" key="GridCell.Tab.2.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675670" />
+    <state width="1870" height="354" key="GridCell.Tab.2.left" timestamp="1605468675670">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.3.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304671" />
-    <state width="1870" height="354" key="GridCell.Tab.3.center" timestamp="1605466304671">
+    <state width="1870" height="354" key="GridCell.Tab.2.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675670" />
+    <state width="1870" height="354" key="GridCell.Tab.2.right" timestamp="1605468675670">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.3.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304671" />
-    <state width="1870" height="354" key="GridCell.Tab.3.left" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.2.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675670" />
+    <state width="1870" height="354" key="GridCell.Tab.3.bottom" timestamp="1605468675564">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.3.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
-    <state width="1870" height="354" key="GridCell.Tab.3.right" timestamp="1605466304671">
+    <state width="1870" height="354" key="GridCell.Tab.3.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675564" />
+    <state width="1870" height="354" key="GridCell.Tab.3.center" timestamp="1605468675564">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.3.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304671" />
-    <state width="1870" height="354" key="GridCell.Tab.4.bottom" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.3.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675564" />
+    <state width="1870" height="354" key="GridCell.Tab.3.left" timestamp="1605468675564">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.4.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
-    <state width="1870" height="354" key="GridCell.Tab.4.center" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.3.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675564" />
+    <state width="1870" height="354" key="GridCell.Tab.3.right" timestamp="1605468675564">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.4.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
-    <state width="1870" height="354" key="GridCell.Tab.4.left" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.3.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675564" />
+    <state width="1870" height="354" key="GridCell.Tab.4.bottom" timestamp="1605468675564">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.4.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
-    <state width="1870" height="354" key="GridCell.Tab.4.right" timestamp="1605466304670">
+    <state width="1870" height="354" key="GridCell.Tab.4.bottom/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675564" />
+    <state width="1870" height="354" key="GridCell.Tab.4.center" timestamp="1605468675563">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state width="1870" height="354" key="GridCell.Tab.4.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605466304670" />
+    <state width="1870" height="354" key="GridCell.Tab.4.center/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675563" />
+    <state width="1870" height="354" key="GridCell.Tab.4.left" timestamp="1605468675563">
+      <screen x="0" y="0" width="1920" height="1025" />
+    </state>
+    <state width="1870" height="354" key="GridCell.Tab.4.left/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675563" />
+    <state width="1870" height="354" key="GridCell.Tab.4.right" timestamp="1605468675563">
+      <screen x="0" y="0" width="1920" height="1025" />
+    </state>
+    <state width="1870" height="354" key="GridCell.Tab.4.right/0.0.1920.1025@0.0.1920.1025" timestamp="1605468675563" />
     <state x="558" y="183" width="800" height="552" key="Rider.ProjectTemplateDialog.Size" timestamp="1605464282150">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
@@ -232,10 +249,14 @@
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
     <state x="444" y="131" width="1031" height="752" key="SettingsEditor/0.0.1920.1025@0.0.1920.1025" timestamp="1605464797134" />
-    <state x="623" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1605466284910">
+    <state x="100" y="68" width="1716" height="879" maximized="true" key="VCS.FileHistoryDialog" timestamp="1605468854912">
       <screen x="0" y="0" width="1920" height="1025" />
     </state>
-    <state x="623" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1920.1025@0.0.1920.1025" timestamp="1605466284910" />
+    <state x="100" y="68" width="1716" height="879" maximized="true" key="VCS.FileHistoryDialog/0.0.1920.1025@0.0.1920.1025" timestamp="1605468854912" />
+    <state x="623" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1605467786322">
+      <screen x="0" y="0" width="1920" height="1025" />
+    </state>
+    <state x="623" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1920.1025@0.0.1920.1025" timestamp="1605467786322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,13 +279,26 @@
           <line>19</line>
           <properties documentPath="$PROJECT_DIR$/WebsiteChangeNotifier.Services/WebsiteContentChecker.cs" initialLine="19">
             <startOffsets>
-              <option value="608" />
+              <option value="615" />
             </startOffsets>
             <endOffsets>
-              <option value="662" />
+              <option value="669" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/NotificationController.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/WebsiteChangeNotifier.Api/Controllers/NotificationController.cs" initialLine="33">
+            <startOffsets>
+              <option value="1021" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1213" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

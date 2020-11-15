@@ -12,7 +12,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="WebsiteChangeNotifier.Api" t="IncludeRecursive">
         <e p="Controllers" t="Include">
-          <e p="ValuesController.cs" t="Include" />
+          <e p="NotificationController.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -34,7 +34,8 @@
         <e p="wwwroot" t="Include" />
       </e>
       <e p="WebsiteChangeNotifier.Data" t="IncludeRecursive">
-        <e p="Class1.cs" t="Include" />
+        <e p="EmailConfig.cs" t="Include" />
+        <e p="NotificationConfig.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Data.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -46,6 +47,7 @@
         </e>
       </e>
       <e p="WebsiteChangeNotifier.Interfaces" t="IncludeRecursive">
+        <e p="IEmailSender.cs" t="Include" />
         <e p="IWebsiteContentChecker.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Interfaces.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
@@ -59,6 +61,7 @@
       </e>
       <e p="WebsiteChangeNotifier.Services" t="IncludeRecursive">
         <e p="DependencyInjector.cs" t="Include" />
+        <e p="EmailSender.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Services.csproj" t="IncludeRecursive" />
         <e p="WebsiteContentChecker.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />

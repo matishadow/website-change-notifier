@@ -9,7 +9,7 @@ namespace WebsiteChangeNotifier.Services
     {
         private readonly HttpClient _httpClient;
 
-        public WebsiteContentChecker(HttpMessageHandler? httpMessageHandler)
+        public WebsiteContentChecker(HttpMessageHandler? httpMessageHandler = null)
         {
             httpMessageHandler ??= new HttpClientHandler();
             _httpClient = new HttpClient(httpMessageHandler);
@@ -20,7 +20,7 @@ namespace WebsiteChangeNotifier.Services
             var response = await _httpClient.GetAsync(websiteUri);
             var content = await response.Content.ReadAsStringAsync();
 
-            return content.Contains(stringToCheck);
+            return content.Contains(stringToCheck, StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }

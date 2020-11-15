@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using WebsiteChangeNotifier.Data;
 using WebsiteChangeNotifier.Services;
 
 namespace WebsiteChangeNotifier
@@ -27,6 +28,9 @@ namespace WebsiteChangeNotifier
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSingleton(provider => Configuration.GetSection(nameof(EmailConfig)).Get<EmailConfig>());
+            services.AddSingleton(provider => Configuration.GetSection(nameof(NotificationConfig)).Get<NotificationConfig>());
             
             services.AddServices();
         }

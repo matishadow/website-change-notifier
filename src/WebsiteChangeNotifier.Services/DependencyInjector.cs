@@ -9,6 +9,7 @@ namespace WebsiteChangeNotifier.Services
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IWebsiteContentChecker, WebsiteContentChecker>();
+            services.AddScoped<IEmailSender, EmailSender>();
             
             return services;
         }
