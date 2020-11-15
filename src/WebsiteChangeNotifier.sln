@@ -1,6 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier", "WebsiteChangeNotifier\WebsiteChangeNotifier.csproj", "{F719F359-DBE1-4399-923C-8A261479EF13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier.Api", "WebsiteChangeNotifier.Api\WebsiteChangeNotifier.Api.csproj", "{F719F359-DBE1-4399-923C-8A261479EF13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier.Interfaces", "WebsiteChangeNotifier.Interfaces\WebsiteChangeNotifier.Interfaces.csproj", "{1954160C-9B8D-4B23-B478-2C63F285209D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier.Services", "WebsiteChangeNotifier.Services\WebsiteChangeNotifier.Services.csproj", "{E720AB3D-FAE0-4205-8E55-B5EB4AB8AD0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier.Data", "WebsiteChangeNotifier.Data\WebsiteChangeNotifier.Data.csproj", "{F92C319C-6FC0-4BA0-ACF3-EC3D68D1FB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteChangeNotifier.Tests", "WebsiteChangeNotifier.Tests\WebsiteChangeNotifier.Tests.csproj", "{AA51F17B-3996-4DE5-852B-CD59653401DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +20,21 @@ Global
 		{F719F359-DBE1-4399-923C-8A261479EF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F719F359-DBE1-4399-923C-8A261479EF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F719F359-DBE1-4399-923C-8A261479EF13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1954160C-9B8D-4B23-B478-2C63F285209D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1954160C-9B8D-4B23-B478-2C63F285209D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1954160C-9B8D-4B23-B478-2C63F285209D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1954160C-9B8D-4B23-B478-2C63F285209D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E720AB3D-FAE0-4205-8E55-B5EB4AB8AD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E720AB3D-FAE0-4205-8E55-B5EB4AB8AD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E720AB3D-FAE0-4205-8E55-B5EB4AB8AD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E720AB3D-FAE0-4205-8E55-B5EB4AB8AD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92C319C-6FC0-4BA0-ACF3-EC3D68D1FB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92C319C-6FC0-4BA0-ACF3-EC3D68D1FB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92C319C-6FC0-4BA0-ACF3-EC3D68D1FB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92C319C-6FC0-4BA0-ACF3-EC3D68D1FB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA51F17B-3996-4DE5-852B-CD59653401DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA51F17B-3996-4DE5-852B-CD59653401DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA51F17B-3996-4DE5-852B-CD59653401DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA51F17B-3996-4DE5-852B-CD59653401DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
