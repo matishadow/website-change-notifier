@@ -14,4 +14,10 @@
         <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\WebsiteChangeNotifier.Data\WebsiteChangeNotifier.Data.csproj" />
+      <ProjectReference Include="..\WebsiteChangeNotifier.Interfaces\WebsiteChangeNotifier.Interfaces.csproj" />
+      <ProjectReference Include="..\WebsiteChangeNotifier.Services\WebsiteChangeNotifier.Services.csproj" />
+    </ItemGroup>
+
 </Project>

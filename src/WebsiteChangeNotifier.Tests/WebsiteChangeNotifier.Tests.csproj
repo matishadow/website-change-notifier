@@ -7,9 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="nunit" Version="3.10.1"/>
-        <PackageReference Include="NUnit3TestAdapter" Version="3.10.0"/>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0"/>
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+        <PackageReference Include="Moq" Version="4.15.1" />
+        <PackageReference Include="nunit" Version="3.10.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WebsiteChangeNotifier.Data\WebsiteChangeNotifier.Data.csproj" />
+      <ProjectReference Include="..\WebsiteChangeNotifier.Interfaces\WebsiteChangeNotifier.Interfaces.csproj" />
+      <ProjectReference Include="..\WebsiteChangeNotifier.Services\WebsiteChangeNotifier.Services.csproj" />
     </ItemGroup>
 
 </Project>

@@ -46,7 +46,7 @@
         </e>
       </e>
       <e p="WebsiteChangeNotifier.Interfaces" t="IncludeRecursive">
-        <e p="Class1.cs" t="Include" />
+        <e p="IWebsiteContentChecker.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Interfaces.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -58,8 +58,9 @@
         </e>
       </e>
       <e p="WebsiteChangeNotifier.Services" t="IncludeRecursive">
-        <e p="Class1.cs" t="Include" />
+        <e p="DependencyInjector.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Services.csproj" t="IncludeRecursive" />
+        <e p="WebsiteContentChecker.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -70,8 +71,8 @@
         </e>
       </e>
       <e p="WebsiteChangeNotifier.Tests" t="IncludeRecursive">
-        <e p="UnitTest1.cs" t="Include" />
         <e p="WebsiteChangeNotifier.Tests.csproj" t="IncludeRecursive" />
+        <e p="WebsiteContentCheckerTests.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
