@@ -30,7 +30,7 @@ namespace WebsiteChangeNotifier
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddSingleton(provider => Configuration.GetSection(nameof(EmailConfig)).Get<EmailConfig>());
-            services.AddSingleton(provider => Configuration.GetSection(nameof(NotificationConfig)).Get<NotificationConfig>());
+            services.AddSingleton(provider => Configuration.GetSection(nameof(NotificationConfig)).Get<List<NotificationConfig>>());
             
             services.AddServices();
         }

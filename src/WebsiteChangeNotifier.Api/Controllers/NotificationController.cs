@@ -16,27 +16,34 @@ namespace WebsiteChangeNotifier.Controllers
         private IEmailSender _emailSender;
         private IWebsiteContentChecker _websiteContentChecker;
 
-        private NotificationConfig _notificationConfig;
+        private List<NotificationConfig> _notificationConfigList;
 
         public NotificationController(
-            IWebsiteContentChecker websiteContentChecker, 
-            IEmailSender emailSender, 
-            NotificationConfig notificationConfig)
+            IWebsiteContentChecker websiteContentChecker,
+            IEmailSender emailSender,
+            List<NotificationConfig> notificationConfigList)
         {
             _websiteContentChecker = websiteContentChecker;
             _emailSender = emailSender;
-            _notificationConfig = notificationConfig;
+            _notificationConfigList = notificationConfigList;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var isKeywordInWebsiteContent =
-                await _websiteContentChecker.IsStringInWebsiteContent(new Uri(_notificationConfig.WebsiteUri),
-                    _notificationConfig.Keyword);
+            foreach (var notificationConfig in _notificationConfigList)
+            {
+                foreach (var stringToCheck in notificationConfig.Keyword)
+                {
+                    var isKeywordInWebsiteContent =
+                        await _websiteContentChecker.IsStringInWebsiteContent(new Uri(notificationConfig.WebsiteUri),
+                            stringToCheck);
 
-            if (isKeywordInWebsiteContent)
-                _emailSender.SendEmail("Website Change Notification", $"{_notificationConfig.Keyword} is on the menu!");
+                    if (isKeywordInWebsiteContent)
+                        _emailSender.SendEmail("Website Change Notification", $"{stringToCheck} is on {notificationConfig.WebsiteUri}!");
+
+                }
+            }
 
             return Ok();
         }
